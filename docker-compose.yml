@@ -3,8 +3,6 @@ services :
   eve_sde_db:
     image: postgres:13-alpine
     container_name: eve_sde_db
-    ports:
-      - "5433:5432"
     env_file:
       - config/.env
     volumes:
